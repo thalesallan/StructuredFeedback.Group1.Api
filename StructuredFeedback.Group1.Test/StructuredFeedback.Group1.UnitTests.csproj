@@ -84,10 +84,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\StructuredFeedback.Group1.Borders\StructuredFeedback.Group1.Borders.csproj">
       <Project>{295DEEB0-6D6E-47E7-88F9-695555F169AC}</Project>
       <Name>StructuredFeedback.Group1.Borders</Name>
