@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StructuredFeedback.Group1.Borders\StructuredFeedback.Group1.Borders.csproj" />
+    <ProjectReference Include="..\StructuredFeedback.Group1.Repositories\StructuredFeedback.Group1.Repositories.csproj" />
+    <ProjectReference Include="..\StructuredFeedback.Group1.UseCases\StructuredFeedback.Group1.UseCases.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+
+</Project>

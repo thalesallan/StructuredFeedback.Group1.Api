@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9A51434-AEA6-4691-90FF-50A355F13958}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>StructuredFeedback.Group1.UseCases</RootNamespace>
+    <AssemblyName>StructuredFeedback.Group1.UseCases</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="UseCases\ConversaoTrajetoriaUseCase.cs" />
+    <Compile Include="UseCases\ObterAdesaoTriboUseCase.cs" />
+    <Compile Include="UseCases\ObterTrajetoriaDesejadaUseCase.cs" />
+    <Compile Include="UseCases\ObterTrajetoriasGeraisUseCase.cs" />
+    <Compile Include="UseCases\ObterTribosUseCase.cs" />
+    <Compile Include="UseCases\RelatorioUseCase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StructuredFeedback.Group1.Borders\StructuredFeedback.Group1.Borders.csproj">
+      <Project>{295DEEB0-6D6E-47E7-88F9-695555F169AC}</Project>
+      <Name>StructuredFeedback.Group1.Borders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StructuredFeedback.Group1.Repositories\StructuredFeedback.Group1.Repositories.csproj">
+      <Project>{6534CB10-E1F9-4D6E-A665-E7E822ABE77C}</Project>
+      <Name>StructuredFeedback.Group1.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
